@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-palette.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Monoton&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC</title>
+</head>
+
+<body>
+    <header>
+        <h1>ALPHABET SONGS</h1>
+    </header>
+    <main>
+        <div class="alphabet">
+            <div class="letters container">
+                <button>a</button>
+                <audio id="a" src="./assets/sounds/a.mp3"></audio>
+
+                <button>b</button>
+                <audio id="b" src="./assets/sounds/b.mp3"></audio>
+
+                <button>c</button>
+                <audio id="c" src="./assets/sounds/c.mp3"></audio>
+
+                <button>d</button>
+                <audio id="d" src="./assets/sounds/d.mp3"></audio>
+
+                <button>e</button>
+                <audio id="e" src="./assets/sounds/e.mp3"></audio>
+
+                <button>f</button>
+                <audio id="f" src="./assets/sounds/f.mp3"></audio>
+
+                <button>g</button>
+                <audio id="g" src="./assets/sounds/g.mp3"></audio>
+
+                <button>h</button>
+                <audio id="h" src="./assets/sounds/h.mp3"></audio>
+
+                <button>i</button>
+                <audio id="i" src="./assets/sounds/i.mp3"></audio>
+
+                <button>j</button>
+                <audio id="j" src="./assets/sounds/j.mp3"></audio>
+
+                <button>k</button>
+                <audio id="k" src="./assets/sounds/k.mp3"></audio>
+
+                <button>l</button>
+                <audio id="l" src="./assets/sounds/l.mp3"></audio>
+
+                <button>m</button>
+                <audio id="m" src="./assets/sounds/m.mp3"></audio>
+
+                <button>n</button>
+                <audio id="n" src="./assets/sounds/n.mp3"></audio>
+
+                <button>o</button>
+                <audio id="o" src="./assets/sounds/o.mp3"></audio>
+
+                <button>p</button>
+                <audio id="p" src="./assets/sounds/p.mp3"></audio>
+
+                <button>q</button>
+                <audio id="q" src="./assets/sounds/q.mp3"></audio>
+
+                <button>r</button>
+                <audio id="r" src="./assets/sounds/r.mp3"></audio>
+
+                <button>s</button>
+                <audio id="s" src="./assets/sounds/s.mp3"></audio>
+
+                <button>t</button>
+                <audio id="t" src="./assets/sounds/t.mp3"></audio>
+
+                <button>u</button>
+                <audio id="u" src="./assets/sounds/u.mp3"></audio>
+
+                <button>v</button>
+                <audio id="v" src="./assets/sounds/v.mp3"></audio>
+
+                <button>w</button>
+                <audio id="w" src="./assets/sounds/w.mp3"></audio>
+
+                <button>x</button>
+                <audio id="x" src="./assets/sounds/x.mp3"></audio>
+
+                <button>y</button>
+                <audio id="y" src="./assets/sounds/y.mp3"></audio>
+
+                <button>z</button>
+                <audio id="z" src="./assets/sounds/z.mp3"></audio>
+            </div>
+            <div class="numbers container">
+                <button>0</button>
+                <audio id="0" src="./assets/sounds/0.mp3"></audio>
+
+                <button>1</button>
+                <audio id="1" src="./assets/sounds/1.mp3"></audio>
+
+                <button>2</button>
+                <audio id="2" src="./assets/sounds/2.mp3"></audio>
+
+                <button>3</button>
+                <audio id="3" src="./assets/sounds/3.mp3"></audio>
+
+                <button>4</button>
+                <audio id="4" src="./assets/sounds/4.mp3"></audio>
+
+                <button>5</button>
+                <audio id="5" src="./assets/sounds/5.mp3"></audio>
+
+                <button>6</button>
+                <audio id="6" src="./assets/sounds/6.mp3"></audio>
+
+                <button>7</button>
+                <audio id="7" src="./assets/sounds/7.mp3"></audio>
+
+                <button>8</button>
+                <audio id="8" src="./assets/sounds/8.mp3"></audio>
+
+                <button>9</button>
+                <audio id="9" src="./assets/sounds/9.mp3"></audio>
+
+                <button>10</button>
+                <audio id="10" src="./assets/sounds/10.mp3"></audio>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>Produced by Henrique Oliveira - 2024</p>
+        <p>&copy;All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="./jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="./mousetrap.min.js"></script>
+    <script type="text/javascript">
+        $('button').on('click', function () {
+            var next = $(this).next().attr('id');
+            sound = document.getElementById(next);
+            sound.play()
+        })
+    </script>
+
+
+</body>
+
+</html>
